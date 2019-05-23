@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: "service-consumer"
+
+server:
+  port: 8100
+
+number:
+  service:
+    url : "http://localhost:8080/random"
+

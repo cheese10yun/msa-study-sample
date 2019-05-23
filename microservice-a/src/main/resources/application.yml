@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: microservice-a
+
+application:
+  message: "Default Message"
