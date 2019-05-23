@@ -10,4 +10,4 @@ spring:
     config:
       server:
         git:
-          uri: "file:///Users/cheese/yun/proejct/msa/msa-study-sample"
+          uri: "https://github.com/cheese10yun/msa-study-sample"
