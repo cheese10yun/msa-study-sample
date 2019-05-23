@@ -1,1 +1,2 @@
-message: "Message From Default Local Git Repository"
+application:
+  message: "Message From Default Local Git Repository"
