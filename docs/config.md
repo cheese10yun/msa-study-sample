@@ -1,6 +1,6 @@
 > [스프링 5.0 마스터](http://acornpub.co.kr/book/mastering-spring-5.0)를보고 정리한 자료 입니다.
 
-# 스프링 클라우드 컨피그
+# Spring Cloud Config
 스프링 클라우드 컨피그는 중앙 집중식 마이크로서비스 구성을 지원한다. 여기서 두 가지 중요한 구성 요소의 조합이다.
 
 * 스프링 클라우드 컨피그 서버 : 버전 관리 리포지토리로 백업된 중앙 집중식 구성 노출을 지원한다.
@@ -194,6 +194,38 @@ spring:
 ```
 
 `Dev` 메시지가 출력되는 것을 확인 할 수 있습니다. `profiles`을 `default` 으로 지정하면 메시지에는 local 이라는 문자가 출력됩니다.
+
+
+## Refresh
+마이크로서비스 A의 properties의 변경이 생겼을 경우 Refresh API를 호출해서 설정을 변경할 수 있다.
+
+![](../static/json-1.png)
+
+message API를 호출하면 기존 메시지가 그대로 출력된다.
+
+
+```yml
+# microservice-a-default.yml
+application:
+  message: "Message From Default Local Git Repository (Properties update...)"
+```
+`microservice-a-default.yml` 메시지를 위와 같이 변경한 이후에 
+
+
+POST http://127.0.0.1:8080/actuator/refresh을 호출하면
+
+```
+[
+  "config.client.version",
+  "application.message"
+]
+```
+
+Response으로 application.message의 변경을 알려준다. 이후 message api를 호출하면 아래 그림처럼 변경된 Response를 확인 할 수 있다.
+
+![](../static/json-2.png)
+
+
 
 ## 결론
 Github Repository와 같은 버전 관리 리포지토리로 백업된 중앙 집중 구성으로 properties를 제공해줍니다. 또 Properties 설정 및 단순한 설정으로 클라이언트 애플리케이션이 스프링 클라우드 컨피그 서버에 쉽게 연결되도록 지원해줍니다.
