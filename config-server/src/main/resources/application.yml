@@ -11,3 +11,10 @@ spring:
       server:
         git:
           uri: "https://github.com/cheese10yun/msa-study-sample"
+
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
