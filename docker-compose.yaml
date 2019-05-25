@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  rabbitmq:
+    container_name: bus.rabbitmq
+    image: rabbitmq:3.7-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER = user
+      - RABBITMQ_DEFAULT_PASS = user
+    hostname: bus
+    volumes:
+      - ./volumes/bus-rabbitmq:/var/lib/rabbitmq
