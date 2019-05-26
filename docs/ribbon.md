@@ -46,3 +46,7 @@ GET http://127.0.0.1:8100/add을 호추랗면 아래와 같은 결과값을 응�
 ![](../static/ribbon-result2.png)
 
 라운드 로빈 방식으로 random API 호출이 http://localhost:8080, http://localhost:8081으로 분산되어 호출됩니다.
+
+![](../static/msa-simple.png)
+
+위과 같은 아키텍처 구성을 가지게 됩니다.
