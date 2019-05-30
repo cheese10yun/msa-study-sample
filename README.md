@@ -5,3 +5,4 @@
 * [Cloud Feign](https://github.com/cheese10yun/msa-study-sample/blob/master/docs/feign.md)
 * [Cloud Ribbon](https://github.com/cheese10yun/msa-study-sample/blob/master/docs/ribbon.md)
 * [Cloud eureka](https://github.com/cheese10yun/msa-study-sample/blob/master/docs/eureka.md)
+* [Cloud API-Gateway](https://github.com/cheese10yun/msa-study-sample/blob/master/docs/api-gateway.md)
