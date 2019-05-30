@@ -6,7 +6,7 @@ server:
   port: 8100
 
 
-microservice-a:
-  ribbon:
-    listOfServers: http://localhost:8080,http://localhost:8081
+#microservice-a:
+#  ribbon:
+#    listOfServers: http://localhost:8080,http://localhost:8081
 
