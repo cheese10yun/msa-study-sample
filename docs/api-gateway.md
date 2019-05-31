@@ -60,6 +60,9 @@ server:
 
 필요한 의존성, 유레카 클라이언트, API 게이트웨이 등록을 진행한다.
 
+![](../static/api-gateway-eureka.png)
+서버를 실행하면 유레카에 등록된 것을 확인 할 수있다.
+
 ```java
 @Component
 @Slf4j
