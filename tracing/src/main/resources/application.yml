@@ -3,4 +3,12 @@ server:
 
 spring:
   application:
-    name: zipkin-distributed-tracing-server
+    name: "zipkin-distributed-tracing-server"
+  main:
+    allow-bean-definition-overriding: true
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
