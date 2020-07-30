@@ -1,4 +1,4 @@
-example.property: "dev1"
+example.property: "dev"
 spring.jpa.database: "mysql"
 spring.jpa.hibernate.ddl-auto: create
 spring.jpa.show-sql: "true"
