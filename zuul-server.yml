@@ -4,9 +4,7 @@ server:
 spring:
     application:
         name: zuul-server
-    cloud:
-        config:
-            uri: http://localhost:8888
+
 zuul:
     ignored-services: "*"
     prefix: "/api"
@@ -23,6 +21,12 @@ eureka:
         service-url:
             default-zone: http://localhost:8761/eureka/
 
+hystrix:
+    command:
+        default.execution.isolation.thread.timeoutInMilliseconds: 2500
+        license-service.execution.isolation.thread.timeoutInMilliseconds: 7000
+
+
 management:
     endpoints:
         web:
@@ -31,4 +35,3 @@ management:
                     - "info"
                     - "health"
                     - "routes"
-                    - "refresh"
