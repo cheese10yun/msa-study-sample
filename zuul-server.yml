@@ -31,3 +31,4 @@ management:
                     - "info"
                     - "health"
                     - "routes"
+                    - "refresh"
