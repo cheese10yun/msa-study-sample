@@ -12,7 +12,7 @@ zuul:
     prefix: "/api"
     routes:
         organization-service: "/organization/**"
-        licensing-service: "/licensing/**"
+#        licensing-service: "/licensing/**"
 
 eureka:
     instance:
