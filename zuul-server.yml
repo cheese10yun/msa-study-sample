@@ -9,7 +9,7 @@ spring:
             uri: http://localhost:8888
 zuul:
     ignored-services: "*"
-    prefix: "/api/v1"
+    prefix: "/api"
     routes:
         organization-service: "/organization/**"
         licensing-service: "/licensing/**"
