@@ -1,4 +1,4 @@
-example.property: "default"
+example.property: "bus refresh"
 spring.jpa.database: "mysql"
 spring.jpa.hibernate.ddl-auto: create
 spring.jpa.show-sql: "true"
