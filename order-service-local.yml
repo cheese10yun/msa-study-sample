@@ -1,2 +1,6 @@
+logging:
+    level:
+        ROOT: debug
+
 message:
     profile: "new local"
