@@ -3,4 +3,4 @@ logging:
         ROOT: info
 
 message:
-    profile: "new new local"
+    profile: "new kafka local"
