@@ -3,4 +3,4 @@ logging:
         ROOT: info
 
 message:
-    profile: "local"
+    profile: "local test"
