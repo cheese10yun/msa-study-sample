@@ -1,6 +1,6 @@
 logging:
     level:
-        ROOT: debug
+        ROOT: info
 
 message:
     profile: "new new local"
