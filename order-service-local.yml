@@ -3,4 +3,4 @@ logging:
         ROOT: debug
 
 message:
-    profile: "new local"
+    profile: "new new local"
