@@ -1,2 +1,3 @@
 message:
-    profile: "default-8"
+    profile: "default"
+    server-name: "Config Server"
